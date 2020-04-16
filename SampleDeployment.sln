@@ -5,6 +5,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{4E331120-4FEC-436D-8AA6-AC9EBE1506ED}"
 ProjectSection(SolutionItems) = preProject
 	SolutionItems\SampleCoreApp_Deploy.ps1 = SolutionItems\SampleCoreApp_Deploy.ps1
+	SolutionItems\SampleCoreApp_Host.sh = SolutionItems\SampleCoreApp_Host.sh
 EndProjectSection
 EndProject
 Global

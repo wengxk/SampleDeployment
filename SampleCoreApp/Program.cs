@@ -37,13 +37,18 @@ namespace SampleCoreApp
                             serverOptions.Limits.MinResponseDataRate = new MinDataRate(100, TimeSpan.FromSeconds(10));
 
                             serverOptions.DisableStringReuse = true;
-
-                            serverOptions.Listen(IPAddress.Loopback, 5000);
+                            
+                            // 这里对终结点的配置会覆盖环境变量 ASPNETCORE_URLS 的设置
+                            // serverOptions.Listen(IPAddress.Loopback, 5000);
+                            // serverOptions.ListenAnyIP(5005);
                             // serverOptions.Listen(IPAddress.Loopback, 5001, listenOptions =>
                             // {
                             //     listenOptions.UseHttps("testCert.pfx", 
                             //         "testPassword");
                             // });
+                            
+                            
+                            
                         }).UseStartup<Startup>();
                 });
     }
